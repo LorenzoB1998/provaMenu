@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta charset=UTF-8 />
+<title>MENU OFF CANVAS</title>
+<link href="css/stile.css" rel="stylesheet" type="text/css" media="screen">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+<div id="container">
+	<header>
+    	<div class="menu">
+        	<div class="closeButton"><a class="icon-close"></a></div>
+        		<ul>
+                
+                	<li><a href="#">Home</a></li>
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Percorsi</a></li>
+                    <li><a href="#">Allenamenti</a></li>
+                    <li><a href="#">Alimentazione</a></li>
+                    <li><a href="#">Contattaci</a></li>
+                
+                </ul>
+        </div>
+        <div id="menuButton"><a class="icon-menu"></a></div>
+    </header>
+<div class="main">
+
+		<h1>I LOVE RUNNING</h1>
+   
+</div>
+
+</div>
+<script>
+	$('#menuButton').click(function()
+{
+	   $('.menu').
+            animate({"left":"0px"}, 1000);
+       });
+	   
+       $('.closeButton').click(function()
+{
+	   $('.menu').animate({"left":"-200px"}, 1000);
+});
+	
+</script>
+</body>
+</html>
